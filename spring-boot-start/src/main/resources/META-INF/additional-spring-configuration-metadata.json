@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "limit.minMoney",
+      "type": "java.lang.String",
+      "description": "Description for limit.minMoney."
+  }
+] }
