@@ -1,0 +1,180 @@
+2020-05-12 18:50:34.697  INFO 8800 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 8800 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 18:50:34.700  INFO 8800 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 18:50:35.772  INFO 8800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 18:50:35.877  INFO 8800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 1 JPA repository interfaces.
+2020-05-12 18:50:36.923  INFO 8800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 18:50:36.988  INFO 8800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 18:50:37.143  INFO 8800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 18:50:37.432  INFO 8800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 18:50:37.668  INFO 8800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 18:50:37.685  INFO 8800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 18:50:38.664  INFO 8800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 18:50:38.674  INFO 8800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 18:50:39.657  WARN 8800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 18:50:40.004  INFO 8800 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 18:50:40.459  INFO 8800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 18:50:40.847  INFO 8800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 18:50:40.884  INFO 8800 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 18:50:40.914  INFO 8800 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 18:50:40.934  INFO 8800 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 7.051 seconds (JVM running for 8.943)
+2020-05-12 18:50:41.192  INFO 8800 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 18:50:41.195  INFO 8800 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 18:50:41.199  INFO 8800 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 18:50:41.209  INFO 8800 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 18:51:44.246  INFO 1524 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 1524 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 18:51:44.258  INFO 1524 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 18:51:45.470  INFO 1524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 18:51:45.533  INFO 1524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 1 JPA repository interfaces.
+2020-05-12 18:51:46.191  INFO 1524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 18:51:46.248  INFO 1524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 18:51:46.385  INFO 1524 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 18:51:46.668  INFO 1524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 18:51:46.884  INFO 1524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 18:51:46.900  INFO 1524 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 18:51:47.809  INFO 1524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 18:51:47.819  INFO 1524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 18:51:48.693  WARN 1524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 18:51:48.996  INFO 1524 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 18:51:49.367  INFO 1524 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 18:51:49.715  INFO 1524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 18:51:49.746  INFO 1524 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 18:51:49.777  INFO 1524 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 18:51:49.803  INFO 1524 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 6.22 seconds (JVM running for 7.752)
+2020-05-12 18:51:50.014  INFO 1524 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 18:51:50.017  INFO 1524 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 18:51:50.020  INFO 1524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 18:51:50.029  INFO 1524 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 19:01:12.843  INFO 15108 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 15108 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 19:01:12.860  INFO 15108 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 19:01:14.066  INFO 15108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 19:01:14.156  INFO 15108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 1 JPA repository interfaces.
+2020-05-12 19:01:14.926  INFO 15108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 19:01:14.980  INFO 15108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 19:01:15.135  INFO 15108 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 19:01:15.442  INFO 15108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 19:01:15.674  INFO 15108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 19:01:15.691  INFO 15108 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 19:01:16.564  INFO 15108 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 19:01:16.571  INFO 15108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:01:17.519  WARN 15108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 19:01:17.872  INFO 15108 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 19:01:18.358  INFO 15108 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:01:18.677  INFO 15108 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 19:01:18.703  INFO 15108 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 19:01:18.726  INFO 15108 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 19:01:18.745  INFO 15108 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 6.574 seconds (JVM running for 7.868)
+2020-05-12 19:01:18.938  INFO 15108 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:01:18.943  INFO 15108 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:01:18.946  INFO 15108 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 19:01:18.955  INFO 15108 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 19:02:16.668  INFO 12568 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 12568 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 19:02:16.670  INFO 12568 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 19:02:17.749  INFO 12568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 19:02:17.828  INFO 12568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 1 JPA repository interfaces.
+2020-05-12 19:02:18.561  INFO 12568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 19:02:18.654  INFO 12568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 19:02:18.887  INFO 12568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 19:02:19.215  INFO 12568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 19:02:19.486  INFO 12568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 19:02:19.504  INFO 12568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 19:02:20.308  INFO 12568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 19:02:20.316  INFO 12568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:02:21.140  WARN 12568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 19:02:21.410  INFO 12568 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 19:02:21.767  INFO 12568 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:02:22.054  INFO 12568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 19:02:22.080  INFO 12568 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 19:02:22.103  INFO 12568 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 19:02:22.123  INFO 12568 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 6.133 seconds (JVM running for 7.674)
+2020-05-12 19:02:22.352  INFO 12568 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:02:22.356  INFO 12568 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:02:22.359  INFO 12568 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 19:02:22.368  INFO 12568 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 19:03:12.261  INFO 22748 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 22748 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 19:03:12.263  INFO 22748 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 19:03:13.195  INFO 22748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 19:03:13.258  INFO 22748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 1 JPA repository interfaces.
+2020-05-12 19:03:13.861  INFO 22748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 19:03:13.916  INFO 22748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 19:03:14.060  INFO 22748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 19:03:14.349  INFO 22748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 19:03:14.562  INFO 22748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 19:03:14.580  INFO 22748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 19:03:15.400  INFO 22748 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 19:03:15.408  INFO 22748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:03:16.290  WARN 22748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 19:03:16.591  INFO 22748 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 19:03:16.956  INFO 22748 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:03:17.411  INFO 22748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 19:03:17.434  INFO 22748 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 19:03:17.462  INFO 22748 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 19:03:17.485  INFO 22748 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 5.907 seconds (JVM running for 7.344)
+2020-05-12 19:03:17.719  INFO 22748 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:03:17.722  INFO 22748 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:03:17.725  INFO 22748 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 19:03:17.735  INFO 22748 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 19:03:32.794  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 14068 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 19:03:32.795  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 19:03:33.716  INFO 14068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 19:03:33.780  INFO 14068 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+2020-05-12 19:03:34.442  INFO 14068 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 19:03:34.492  INFO 14068 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 19:03:34.640  INFO 14068 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 19:03:34.944  INFO 14068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 19:03:35.181  INFO 14068 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 19:03:35.198  INFO 14068 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 19:03:36.035  INFO 14068 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 19:03:36.043  INFO 14068 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:03:36.970  WARN 14068 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 19:03:37.467  INFO 14068 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 19:03:37.911  INFO 14068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:03:38.308  INFO 14068 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 19:03:38.349  INFO 14068 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 19:03:38.388  INFO 14068 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 19:03:38.423  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 6.278 seconds (JVM running for 7.546)
+2020-05-12 19:03:38.666  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=1, msgText=软件1851, msgSummary=沉迷学习)
+2020-05-12 19:03:38.666  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=2, msgText=后端架构, msgSummary=SpringCloud)
+2020-05-12 19:03:38.666  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=3, msgText=前端, msgSummary=Vue.js)
+2020-05-12 19:03:38.666  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=4, msgText=移动端, msgSummary=Flutter)
+2020-05-12 19:03:38.667  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=5, msgText=workday, msgSummary=study)
+2020-05-12 19:03:38.667  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=6, msgText=weekend, msgSummary=play)
+2020-05-12 19:03:38.682  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 总记录数： 6
+2020-05-12 19:03:38.682  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 当前页记录数： 3
+2020-05-12 19:03:38.682  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 每页记录数： 3
+2020-05-12 19:03:38.684  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 获取总页数： 2
+2020-05-12 19:03:38.684  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 查询结果： [Message(msgId=4, msgText=移动端, msgSummary=Flutter), Message(msgId=5, msgText=workday, msgSummary=study), Message(msgId=6, msgText=weekend, msgSummary=play)]
+2020-05-12 19:03:38.684  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 当前页（从0开始计）： 1
+2020-05-12 19:03:38.685  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 是否为首页： false
+2020-05-12 19:03:38.685  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 是否为尾页页： true
+2020-05-12 19:03:38.705  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 满足条件的记录有：
+2020-05-12 19:03:38.706  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Message(msgId=5, msgText=workday, msgSummary=study)
+2020-05-12 19:03:38.712  INFO 14068 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 单个查询结果： Message(msgId=2, msgText=后端架构, msgSummary=SpringCloud)
+2020-05-12 19:03:38.727  INFO 14068 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:03:38.731  INFO 14068 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:03:38.734  INFO 14068 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 19:03:38.740  INFO 14068 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-05-12 19:04:03.745  INFO 14928 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Starting MessageRepositoryTest on mqxu with PID 14928 (started by taoranran in D:\spring-boot-review\spring-boot-jpa)
+2020-05-12 19:04:03.746  INFO 14928 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : The following profiles are active: dev
+2020-05-12 19:04:04.690  INFO 14928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-12 19:04:04.754  INFO 14928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 1 JPA repository interfaces.
+2020-05-12 19:04:05.547  INFO 14928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-12 19:04:05.599  INFO 14928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-05-12 19:04:05.733  INFO 14928 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-12 19:04:06.013  INFO 14928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-12 19:04:06.222  INFO 14928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-12 19:04:06.238  INFO 14928 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2020-05-12 19:04:07.035  INFO 14928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-12 19:04:07.044  INFO 14928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:04:07.901  WARN 14928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-12 19:04:08.180  INFO 14928 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-12 19:04:08.553  INFO 14928 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:04:08.854  INFO 14928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-12 19:04:08.879  INFO 14928 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-12 19:04:08.905  INFO 14928 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-12 19:04:08.924  INFO 14928 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : Started MessageRepositoryTest in 5.825 seconds (JVM running for 7.099)
+2020-05-12 19:04:09.122  INFO 14928 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 增加的数据条数： 1
+2020-05-12 19:04:09.130  INFO 14928 --- [main] c.s.s.jpa.dao.MessageRepositoryTest      : 修改的数据条数： 0
+2020-05-12 19:04:09.148  INFO 14928 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-12 19:04:09.151  INFO 14928 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-12 19:04:09.154  INFO 14928 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-12 19:04:09.163  INFO 14928 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

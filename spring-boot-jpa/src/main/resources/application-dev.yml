@@ -1,0 +1,75 @@
+server:
+  port: 8080
+
+#日志配置
+logging:
+  config: classpath:logback-config.xml
+
+# 单数据源配置
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnide=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      max-lifetime: 30000
+      minimum-idle: 1
+      maximum-pool-size: 20
+      auto-commit: true
+      idle-timeout: 10000
+      connection-timeout: 30000
+    type: com.zaxxer.hikari.HikariDataSource
+  #jpa 配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+
+# 多数据源配置
+#spring:
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+#  datasource:
+#    primary:
+#      url: jdbc:mysql://localhost:3306/cloud_music?useUnide=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+#      username: root
+#      password: root
+#      driver-class-name: com.mysql.jdbc.Driver
+#      hikari:
+#        max-lifetime: 30000
+#        minimum-idle: 1
+#        maximum-pool-size: 20
+#        auto-commit: true
+#        idle-timeout: 10000
+#        connection-timeout: 30000
+#      type: com.zaxxer.hikari.HikariDataSource
+#    secondary:
+#      url: jdbc:mysql://localhost:3306/bbs?useUnide=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true
+#      username: root
+#      password: root
+#      driver-class-name: com.mysql.jdbc.Driver
+#      hikari:
+#         max-lifetime: 30000
+#         minimum-idle: 1
+#         maximum-pool-size: 20
+#         auto-commit: true
+#         idle-timeout: 10000
+#         connection-timeout: 30000
+#      type: com.zaxxer.hikari.HikariDataSource
+#
+#  #jpa 配置
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+#    show-sql: true
