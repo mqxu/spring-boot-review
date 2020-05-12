@@ -18,7 +18,7 @@
 然后在配置类上添加 @ConfigurationProperties 注解即可
 
 ## 3.Tomcat的相关配置
- - 
+
 
 ## 4.HTTPS的配置
 [参考这篇](https://www.cnblogs.com/chenpi/p/9696371.html)

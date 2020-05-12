@@ -1,0 +1,10 @@
+# 用于Spring工厂加载机制，配置需要初始化的类名
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.soft1851.springboot.context.AfterApplicationContextInitializer,\
+com.soft1851.springboot.context.HelloWorldApplicationContextInitializer
+
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+com.soft1851.springboot.listener.AfterApplicationListener,\
+com.soft1851.springboot.listener.HelloWorldApplicationListener
