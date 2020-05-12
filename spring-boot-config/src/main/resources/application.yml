@@ -1,0 +1,36 @@
+## 配置Tomcat属性
+#server:
+#  port: 8081
+#  error:
+#    path: /error
+#  servlet:
+#    context-path: /hello
+#    session:
+#      timeout: 30m
+#  tomcat:
+#    uri-encoding: utf-8
+#    max-threads: 200
+#    basedir: D:/tools/tomcat/temp
+#  ssl:
+#    key-alias: selfsigned_localhost_sslserver
+#    key-store-password: changeit
+#    key-store-provider: SUN
+#    key-store-type: JKS
+#    key-store: classpath:ssl-server.jks
+#
+## 配置属性
+#music:
+#  name: 开到荼蘼
+#  artist: 王菲
+#  playCount: 3000
+#  description: ${music.name}的演唱者是${music.artist}
+#  comments:
+#    - good
+#    - nice
+#    - excellent
+#  rank:
+#    january: 1
+#    february: 2
+#    march: 1
+## comments: [good, nice, excellent]
+## rank: {january:1, february:2, march:1}
