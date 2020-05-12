@@ -20,10 +20,10 @@
 #
 ## 配置属性
 #music:
-#  name: 开到荼蘼
-#  artist: 王菲
+#  name: aaa
+#  artist: bbb
 #  playCount: 3000
-#  description: ${music.name}的演唱者是${music.artist}
+#  description: ${music.name}by${music.artist}
 #  comments:
 #    - good
 #    - nice

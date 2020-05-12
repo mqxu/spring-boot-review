@@ -1,8 +1,12 @@
 package com.soft1851.springboot.config.controller;
 
 import com.soft1851.springboot.config.model.Music;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author: mq_xu
@@ -10,15 +14,18 @@ import org.springframework.web.bind.annotation.RestController;
  * @description:
  */
 @RestController
+@Slf4j
 public class MusicController {
-    public final Music music;
+    @Resource
+    private Music music;
 
-    public MusicController(Music music) {
-        this.music = music;
-    }
+    @Value("${music.name}")
+    private String name;
 
     @GetMapping("/music")
     public Music music() {
+        log.info(String.valueOf(music));
+        log.info(name);
         return music;
     }
 

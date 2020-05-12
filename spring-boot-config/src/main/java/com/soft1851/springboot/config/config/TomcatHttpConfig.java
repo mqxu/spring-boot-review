@@ -21,7 +21,7 @@ public class TomcatHttpConfig {
             @Override
             protected void postProcessContext(Context context) {
                 SecurityConstraint constraint = new SecurityConstraint();
-                constraint.setUserConstraint("CONFIDENTIAL");
+//                constraint.setUserConstraint("CONFIDENTIAL");
                 SecurityCollection collection = new SecurityCollection();
                 collection.addPattern("/*");
                 constraint.addCollection(collection);
@@ -33,11 +33,13 @@ public class TomcatHttpConfig {
     }
 
     private Connector createTomcatConnector() {
+        //使用HTTP/1.1协议,使用NIO
         Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
         connector.setScheme("http");
         connector.setPort(8080);
         connector.setSecure(false);
-        connector.setRedirectPort(8081);
+        connector.setRedirectPort(8443);
         return connector;
     }
+
 }

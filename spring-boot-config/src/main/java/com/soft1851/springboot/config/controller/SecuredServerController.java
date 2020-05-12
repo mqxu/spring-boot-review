@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 /**
  * @author: mq_xu
  * @date: 2020/5/12
- * @description:安全协议请求
+ * @description:HTTPS测试
  */
 @RestController
 @Slf4j
