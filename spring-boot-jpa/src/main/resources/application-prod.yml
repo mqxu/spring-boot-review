@@ -11,17 +11,11 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    primary:
+    hikari:
       jdbc-url: jdbc:mysql://127.0.0.1:3306/test1?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=false
       username: root
       password: root
       driver-class-name: com.mysql.cj.jdbc.Driver
-    secondary:
-      jdbc-url: jdbc:mysql://127.0.0.1:3306/test2?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: root
-      password: root
-      driver-class-name: com.mysql.cj.jdbc.Driver
-    hikari:
       maximumPoolSize: 10
       minimumIdle: 10
       idleTimeout: 600000
