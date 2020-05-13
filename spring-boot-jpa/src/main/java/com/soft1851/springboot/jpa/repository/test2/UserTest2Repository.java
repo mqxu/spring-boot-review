@@ -1,4 +1,4 @@
-package com.soft1851.springboot.jpa.repository;
+package com.soft1851.springboot.jpa.repository.test2;
 
 import com.soft1851.springboot.jpa.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,7 +14,7 @@ import java.util.List;
  * @date: 2020/5/13 0:19
  * @description:基础的UserRepository，从父接口继承CRUD findBy返回一个User，findUsersBy返回一组User
  */
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserTest2Repository extends JpaRepository<User, Long> {
 
     /**
      * 根据方法名解析：按userName和password相等查询唯一记录

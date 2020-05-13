@@ -1,6 +1,7 @@
 package com.soft1851.springboot.jpa.repository;
 
 import com.soft1851.springboot.jpa.model.User;
+import com.soft1851.springboot.jpa.repository.test1.UserTest1Repository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,11 +20,14 @@ import java.util.Random;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+/**
+ * 单数据源测试
+ */
 @SpringBootTest
 @Slf4j
 class UserRepositoryTest {
     @Resource
-    private UserRepository userRepository;
+    private UserTest1Repository userRepository;
 
     @Test
     void testSave() {
