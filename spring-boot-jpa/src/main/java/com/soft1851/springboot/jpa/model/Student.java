@@ -3,8 +3,6 @@ package com.soft1851.springboot.jpa.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author: mq_xu
@@ -22,11 +20,13 @@ public class Student {
     @Column(name = "student_name", nullable = false, length = 30)
     private String studentName;
 
-    @Column(name = "age", nullable = false, length = 30)
+    @Column(name = "age", nullable = false)
     private Integer age;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(name = "student_course", joinColumns = @JoinColumn(name = "student_id"),
-            inverseJoinColumns = @JoinColumn(name = "course_id"))
-    private List<Course> courseList = new ArrayList<>();
+
+//    @JsonIgnore
+//    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @JoinTable(name = "student_course", joinColumns = @JoinColumn(name = "student_id"),
+//            inverseJoinColumns = @JoinColumn(name = "course_id"))
+//    private List<Course> courseList;
 }

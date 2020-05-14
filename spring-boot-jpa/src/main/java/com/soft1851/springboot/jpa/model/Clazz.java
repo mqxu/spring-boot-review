@@ -3,7 +3,6 @@ package com.soft1851.springboot.jpa.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
  * @author: mq_xu
@@ -23,7 +22,7 @@ public class Clazz {
     private String clazzName;
 
 
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "clazz_id")
-    private List<Student> studentList;
+//    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @JoinColumn(name = "clazz_id",referencedColumnName = "id")
+//    private List<Student> studentList;
 }

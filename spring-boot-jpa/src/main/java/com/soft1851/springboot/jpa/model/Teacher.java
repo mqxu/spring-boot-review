@@ -20,7 +20,7 @@ public class Teacher {
     @Column(name = "teacher_name", nullable = false, length = 30)
     private String teacherName;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "clazz_id", referencedColumnName = "id")
-    private Clazz clazz;
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "clazz_id", referencedColumnName = "id")
+//    private Clazz clazz;
 }
