@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 import javax.annotation.Resource;
@@ -17,8 +18,8 @@ import java.util.Map;
  * @date: 2020/5/13 22:08
  * @description:
  */
-//@Configuration
-//@ConfigurationProperties(prefix = "spring")
+@Configuration
+@ConfigurationProperties(prefix = "spring")
 public class DataSourceConfig {
 
     @Resource
