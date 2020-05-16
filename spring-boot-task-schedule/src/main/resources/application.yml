@@ -1,11 +1,13 @@
 server:
   port: 8080
 spring:
+  application:
+    name:  spring-boot-task-schedule
   mail:
     host: smtp.qq.com
     port: 25
     username: 16422802@qq.com
-    password: ******
+    password: uqvibaljlxdxcahc
     default-encoding: UTF-8
 
   datasource:
@@ -21,3 +23,16 @@ spring:
     hibernate:
       ddl-auto: update
 
+  quartz:
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: clusteredScheduler #调度器的实例名
+          jobStore:
+            class: org.quartz.impl.RAMJobStore #作业存储类型为内存式
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool #自带的线程池实现类
+            threadCount: 3 #开启3个线程
+#    # 数据存储方式为内存
+#    job-store-type: memory

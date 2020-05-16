@@ -21,8 +21,7 @@ public class AutoTask implements SchedulingConfigurer {
     @Resource
     protected CronRepository cronRepository;
 
-    private String newCron;
-    private Integer cronId = 1;
+    private Integer cronId=1;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {
@@ -44,5 +43,4 @@ public class AutoTask implements SchedulingConfigurer {
                 }
         );
     }
-
 }
