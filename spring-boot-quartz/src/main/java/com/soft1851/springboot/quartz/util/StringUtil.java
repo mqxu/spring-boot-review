@@ -1,4 +1,4 @@
-package com.soft1851.springboot.schedule.util;
+package com.soft1851.springboot.quartz.util;
 
 import java.util.List;
 
@@ -22,5 +22,4 @@ public enum StringUtil {
         }
         return result.toString();
     }
-
 }

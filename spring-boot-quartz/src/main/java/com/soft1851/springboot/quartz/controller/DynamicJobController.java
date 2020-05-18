@@ -1,9 +1,9 @@
-package com.soft1851.springboot.schedule.controller;
+package com.soft1851.springboot.quartz.controller;
 
-import com.soft1851.springboot.schedule.controller.dto.ModifyCronDto;
-import com.soft1851.springboot.schedule.model.JobEntity;
-import com.soft1851.springboot.schedule.repository.JobEntityRepository;
-import com.soft1851.springboot.schedule.service.DynamicJobService;
+import com.soft1851.springboot.quartz.controller.dto.ModifyCronDto;
+import com.soft1851.springboot.quartz.entity.JobEntity;
+import com.soft1851.springboot.quartz.repository.JobEntityRepository;
+import com.soft1851.springboot.quartz.service.DynamicJobService;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.*;
 import org.quartz.impl.matchers.GroupMatcher;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
-import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.Set;
 
@@ -58,7 +57,7 @@ public class DynamicJobController {
      * @throws SchedulerException
      */
     @RequestMapping("/refresh/{id}")
-    public String refresh(@PathVariable @NotNull Integer id) throws SchedulerException {
+    public String refresh(@PathVariable Integer id) throws SchedulerException {
         String result;
         JobEntity entity = dynamicJobService.getJobEntityById(id);
         if (Objects.isNull(entity)) {

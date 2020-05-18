@@ -1,8 +1,8 @@
-package com.soft1851.springboot.schedule.service;
+package com.soft1851.springboot.quartz.service;
 
-import com.soft1851.springboot.schedule.job.DynamicJob;
-import com.soft1851.springboot.schedule.model.JobEntity;
-import com.soft1851.springboot.schedule.repository.JobEntityRepository;
+import com.soft1851.springboot.quartz.entity.JobEntity;
+import com.soft1851.springboot.quartz.job.DynamicJob;
+import com.soft1851.springboot.quartz.repository.JobEntityRepository;
 import org.quartz.*;
 import org.springframework.stereotype.Service;
 

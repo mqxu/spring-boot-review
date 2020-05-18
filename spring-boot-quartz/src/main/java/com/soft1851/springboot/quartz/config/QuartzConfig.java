@@ -1,4 +1,4 @@
-package com.soft1851.springboot.schedule.config;
+package com.soft1851.springboot.quartz.config;
 
 import org.quartz.spi.JobFactory;
 import org.quartz.spi.TriggerFiredBundle;
@@ -18,7 +18,7 @@ import java.util.Properties;
 
 /**
  * @author: mq_xu
- * @date: 2020/5/18 19:14
+ * @date: 2020/5/18 19:50
  * @description: Quartz的核心配置类
  */
 @Configuration

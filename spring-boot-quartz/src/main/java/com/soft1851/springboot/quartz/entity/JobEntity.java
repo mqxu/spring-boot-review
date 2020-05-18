@@ -1,4 +1,4 @@
-package com.soft1851.springboot.schedule.model;
+package com.soft1851.springboot.quartz.entity;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -12,7 +12,7 @@ import java.io.Serializable;
 /**
  * @author: mq_xu
  * @date: 2020/5/18 19:16
- * @description:
+ * @description: 作业实体类
  */
 @Entity
 @Data

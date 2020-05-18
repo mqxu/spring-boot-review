@@ -1,6 +1,6 @@
-package com.soft1851.springboot.schedule.job;
+package com.soft1851.springboot.quartz.job;
 
-import com.soft1851.springboot.schedule.util.StringUtil;
+import com.soft1851.springboot.quartz.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.quartz.*;
 import org.springframework.stereotype.Component;
@@ -51,7 +51,9 @@ public class DynamicJob implements Job {
                 processBuilder.directory(jar.getParentFile());
                 List<String> commands = new ArrayList<>();
                 commands.add("java");
-                if (!StringUtils.isEmpty(vmParam)) commands.add(vmParam);
+                if (!StringUtils.isEmpty(vmParam)) {
+                    commands.add(vmParam);
+                }
                 commands.add("-jar");
                 commands.add(jarPath);
                 if (!StringUtils.isEmpty(parameter)) {
@@ -66,13 +68,21 @@ public class DynamicJob implements Job {
                 } catch (IOException e) {
                     throw new JobExecutionException(e);
                 }
-            } else throw new JobExecutionException("Job Jar not found >>  " + jarPath);
+            } else {
+                throw new JobExecutionException("Job Jar not found >>  " + jarPath);
+            }
         }
         long endTime = System.currentTimeMillis();
         log.info(">>>>>>>>>>>>> Running Job has been completed , cost time : {}ms\n ", (endTime - startTime));
     }
 
-    //记录Job执行内容
+    /**
+     * 记录Job执行内容
+     *
+     * @param inputStream
+     * @param errorStream
+     * @throws IOException
+     */
     private void logProcess(InputStream inputStream, InputStream errorStream) throws IOException {
         String inputLine;
         String errorLine;
