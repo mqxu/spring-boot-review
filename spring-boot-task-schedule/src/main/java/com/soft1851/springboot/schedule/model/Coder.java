@@ -22,12 +22,22 @@ public class Coder {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    /**
+     * 用户名
+     */
     @Column(nullable = false, length = 50)
     private String name;
 
-    @Column(nullable = false, length = 255)
+    /**
+     * 主页地址
+     */
+    @Column(nullable = false, length = 200)
     private String url;
 
-    @Column(nullable = false, length = 255)
+    /**
+     * 头像
+     */
+    @Column(nullable = false, length = 200)
     private String avatar;
+
 }

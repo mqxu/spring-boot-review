@@ -22,5 +22,5 @@ public interface CoderRepository extends JpaRepository<Coder, Integer> {
     @Modifying
     @Transactional(rollbackFor = RuntimeException.class)
     @Query(value = "update coder set avatar = ?1 where id = ?2", nativeQuery = true)
-    int updateAvatar(String avatar, long id);
+    void updateAvatar(String avatar, int id);
 }

@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * @author: mq_xu
- * @date: 2020/5/18 10:31
+ * @date: 2020/5/18
  * @description: 封装了Quartz 动态添加、修改和删除定时任务时间的方法
  */
 @Slf4j
@@ -26,12 +26,12 @@ public class QuartzManager {
      * @param triggerName      触发器名
      * @param triggerGroupName 触发器组名
      * @param jobClass         任务类
-     * @param interval         间隔
      * @param objects          需要传递给执行任务的信息
      * @throws SchedulerException
      */
     public static void addJob(String jobName, String jobGroupName, String triggerName,
-                              String triggerGroupName, Class<? extends Job> jobClass, int interval,
+                              String triggerGroupName, Class<? extends Job> jobClass,
+                              String cron,
                               Object... objects) throws SchedulerException {
 
         JobDetail jobDetail = JobBuilder.newJob(jobClass).withIdentity(jobName, jobGroupName)
@@ -42,12 +42,23 @@ public class QuartzManager {
                 jobDetail.getJobDataMap().put("data" + (i + 1), objects[i]);
             }
         }
-        Date startTime = new Date();
-        startTime.setTime(startTime.getTime() + interval * 1000);
-        //创建触发器对象
-        SimpleTrigger trigger = TriggerBuilder.newTrigger().withIdentity(triggerName, triggerGroupName)
-                .startAt(startTime).withSchedule(SimpleScheduleBuilder.simpleSchedule()
-                        .withIntervalInSeconds(interval).repeatForever())
+     //   Date startTime = new Date();
+//        startTime.setTime(startTime.getTime() + interval * 1000);
+
+        //创建触发器对象,使用固定的规则
+//        SimpleTrigger trigger = TriggerBuilder.newTrigger().withIdentity(triggerName, triggerGroupName)
+//                .startAt(startTime).withSchedule(SimpleScheduleBuilder.simpleSchedule()
+//                        .withIntervalInSeconds(interval).repeatForever())
+//                .build();
+
+        // 使用cron规则
+        Trigger trigger = TriggerBuilder.newTrigger()
+                .withDescription("触发器的描述")
+                .withIdentity(triggerName, triggerGroupName)
+                //启动时间不设置，默认为当前时间
+                .startAt(new Date())
+                //使用cron表达式创建
+                .withSchedule(CronScheduleBuilder.cronSchedule(cron))
                 .build();
 
         //任务调度器
@@ -56,9 +67,10 @@ public class QuartzManager {
         //启动
         if (!scheduler.isShutdown()) {
             scheduler.start();
-            log.info("任务{}启动,触发器为{},执行间隔为{}", jobName, triggerName, interval);
+            log.info("任务{}启动,触发器为{}", jobName, triggerName);
         }
     }
+
 
     /**
      * 修改一个任务触发时间

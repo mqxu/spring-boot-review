@@ -1,7 +1,8 @@
-package com.soft1851.springboot.schedule.jobs;
+package com.soft1851.springboot.schedule.job;
 
 import com.soft1851.springboot.schedule.repository.CoderRepository;
 import org.quartz.Job;
+import org.quartz.JobDataMap;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
@@ -18,7 +19,9 @@ public class CoderJob implements Job {
 
     @Override
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-//        Job job = jobExecutionContext.getJobInstance();
-//        coderRepository.updateAvatar()
+        JobDataMap map = jobExecutionContext.getMergedJobDataMap();
+        Object data1 = map.get("data1");
+        Object data2 = map.get("data2");
+        coderRepository.updateAvatar(data1.toString(), (int) data2);
     }
 }

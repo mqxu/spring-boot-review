@@ -15,7 +15,7 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>1.11</java.version>
     </properties>
 
     <dependencies>
@@ -68,6 +68,12 @@
             <artifactId>HikariCP</artifactId>
             <version>3.4.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>5.4.15.Final</version>
+        </dependency>
         <!--JPA依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -90,7 +96,6 @@
             <artifactId>core</artifactId>
             <version>3.3.3</version>
         </dependency>
-
     </dependencies>
 
     <build>

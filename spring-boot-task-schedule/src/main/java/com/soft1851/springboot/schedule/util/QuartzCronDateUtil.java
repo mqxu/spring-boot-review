@@ -1,11 +1,11 @@
-package com.soft1851.springboot.schedule.quartz;
+package com.soft1851.springboot.schedule.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
  * @author: mq_xu
- * @date: 2020/5/18 10:33
+ * @date: 2020/5/18
  * @description: 定时器任务工具类
  */
 public class QuartzCronDateUtil {
@@ -26,7 +26,7 @@ public class QuartzCronDateUtil {
     }
 
     /**
-     * 日期转换cron表达式时间格式
+     * 日期转换cron表达式时间格式:convert Date to cron ,eg.  "14 01 17 22 07 ? 2019"
      *
      * @param date 日期
      * @return
