@@ -2,8 +2,6 @@ package com.soft1851.springboot.schedule;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author: mq_xu
@@ -11,8 +9,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @description:通过@EnableScheduling开启定时
  */
 @SpringBootApplication
-@EnableScheduling
-@EnableAsync
+//@EnableScheduling
+//@EnableAsync
 public class SpringBootTaskScheduleApplication {
 
     public static void main(String[] args) {

@@ -22,17 +22,3 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: update
-
-  quartz:
-    properties:
-      org:
-        quartz:
-          scheduler:
-            instanceName: clusteredScheduler #调度器的实例名
-          jobStore:
-            class: org.quartz.impl.RAMJobStore #作业存储类型为内存式
-          threadPool:
-            class: org.quartz.simpl.SimpleThreadPool #自带的线程池实现类
-            threadCount: 3 #开启3个线程
-#    # 数据存储方式为内存
-#    job-store-type: memory
