@@ -72,12 +72,3 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
-    tomcat:
-      initialSize: 20
-      maxActive: 100
-      maxIdle: 100
-      minIdle: 20
-      maxWait: 10000
-      testWhileIdle: true
-      testOnBorrow: false
-      testOnReturn: false

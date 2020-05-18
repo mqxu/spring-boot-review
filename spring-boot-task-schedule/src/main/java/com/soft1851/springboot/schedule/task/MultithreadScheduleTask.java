@@ -11,12 +11,8 @@ import cn.hutool.extra.qrcode.QrConfig;
 import cn.hutool.http.HttpUtil;
 import com.soft1851.springboot.schedule.model.Coder;
 import com.soft1851.springboot.schedule.repository.CoderRepository;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
@@ -25,10 +21,10 @@ import javax.annotation.Resource;
  * @date: 2020/5/17 12:33
  * @description:多线程异步任务
  */
-@Component  //相对于@Repository和@Service，@Component用于那些比较中立的类的注解
-@EnableScheduling //开启定时任务
-@EnableAsync  //开启异步（多线程）
-@Slf4j
+//@Component  //相对于@Repository和@Service，@Component用于那些比较中立的类的注解
+//@EnableScheduling //开启定时任务
+//@EnableAsync  //开启异步（多线程）
+//@Slf4j
 public class MultithreadScheduleTask {
     @Resource
     private CoderRepository coderRepository;

@@ -18,7 +18,7 @@ import java.util.List;
 public class DynamicJobService {
 
     @Resource
-    private JobEntityRepository repository;
+    private JobEntityRepository jobEntityRepository;
 
     /**
      * 通过Id获取Job
@@ -27,7 +27,7 @@ public class DynamicJobService {
      * @return
      */
     public JobEntity getJobEntityById(Integer id) {
-        return repository.getById(id);
+        return jobEntityRepository.getById(id);
     }
 
     /**
@@ -36,7 +36,7 @@ public class DynamicJobService {
      * @return
      */
     public List<JobEntity> loadJobs() {
-        return repository.findAll();
+        return jobEntityRepository.findAll();
     }
 
     /**
